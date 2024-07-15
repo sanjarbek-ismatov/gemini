@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gemini Chatbot</title>
+    <style>
+        body { font-family: Arial, sans-serif; display: flex; flex-direction: column; height: 100vh; margin: 0; }
+        .container { flex: 1; display: flex; flex-direction: column; }
+        .messages { flex: 1; padding: 20px; overflow-y: auto; border-bottom: 1px solid #ddd; }
+        .input-container { display: flex; padding: 10px; }
+        input[type="text"] { flex: 1; padding: 10px; border: 1px solid #ddd; border-radius: 4px; }
+        button { padding: 10px 20px; border: none; background-color: #007BFF; color: white; border-radius: 4px; margin-left: 10px; cursor: pointer; }
+        .message { padding: 10px; margin-bottom: 10px; border-radius: 4px; }
+        .message.you { background-color: #E1F5FE; align-self: flex-end; }
+        .message.bot { background-color: #F1F8E9; align-self: flex-start; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="messages" id="messages"></div>
+        <form id="single-form" class="input-container">
+            <input type="text" id="userInput" placeholder="Type a message...">
+            <button id="sendBtn" type="submit">Send</button>
+        </form>
+    </div>
+    <script src="marked.js"></script>
+    <script src="renderer.js"></script>
+</body>
+</html>
