@@ -1,4 +1,4 @@
-const apiKey = 'AIzaSyDvtSCAAfjS5c0ntQKCVSpwwxVumcHr90c'; // Replace with your actual API key
+const apiKey = 'API_KEY'; // Replace with your actual API key
 const sendRequest = async () => {
     const userInput = document.getElementById('userInput').value;
     if (userInput.trim() !== '') {
