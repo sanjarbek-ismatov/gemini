@@ -1,7 +1,11 @@
 import readline from 'readline';
 import Gemini from "gemini-ai";
+import fetch from "node-fetch";
 import chalk from 'chalk'
-const gemini = new Gemini("AIzaSyDvtSCAAfjS5c0ntQKCVSpwwxVumcHr90c");
+const gemini = new Gemini("AIzaSyDhrgv_yXR1pPrpG4xZmq3wpCFLmVH3tpQ", {
+  fetch
+}
+);
 const geminiChat = gemini.createChat();
 
 const rl = readline.createInterface({
